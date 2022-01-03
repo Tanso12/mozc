@@ -52,10 +52,10 @@
       '<(platform_data_dir)/dictionary07.txt',
       '<(platform_data_dir)/dictionary08.txt',
       '<(platform_data_dir)/dictionary09.txt',
-      '<(platform_data_dir)/mozc-ut.txt',
+#      '<(platform_data_dir)/mozc-ut.txt',
       '<(platform_data_dir)/reading_correction.tsv',
-      '<(mozc_dir)/data/dictionary_manual/domain.txt',
-      '<(mozc_dir)/data/dictionary_manual/era.txt',
+#      '<(mozc_dir)/data/dictionary_manual/domain.txt',
+#      '<(mozc_dir)/data/dictionary_manual/era.txt',
     ],
     # Hex-escaped string of "\xEFMOZC\r\n"
     'magic_number': "\\xEF\\x4D\\x4F\\x5A\\x43\\x0D\\x0A",
