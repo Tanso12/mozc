@@ -1,3 +1,20 @@
+github上のmozc-2.23.2815を集約､ut辞書とupstreamの辞書を取り込む｡(まだ)
+各辞書のライセンスは以下｡なお､Windows上での使用を想定している｡
+mozcdic ut https://osdn.net/users/utuhiro/pf/utuhiro/files/
+alt-cannadic    GPL-2.0 https://ja.osdn.net/projects/alt-cannadic/wiki/FrontPage
+edict2  CC-BY-SA 3.0    http://www.edrdg.org/jmdict/edict.html
+skkdic  GPL-2.0-or-later    http://openlab.ring.gr.jp/skk/wiki/wiki.cgi?page=SKK%BC%AD%BD%F1
+sudachidict Apache-2.0  https://github.com/WorksApplications/SudachiDict
+chimei  public domain  http://www.post.japanpost.jp/zipcode/dl/readme.html
+jawiki-articles CC-BY-SA 3.0    https://ja.wikipedia.org/wiki/Wikipedia:%E3%82%A6%E3%82%A3%E3%82%AD%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2%E3%82%92%E4%BA%8C%E6%AC%A1%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B
+jinmei-ut   Apache-2.0  http://linuxplayers.g1.xrea.com/mozc-ut.html
+neologd Apache-2.0  https://github.com/neologd/mecab-ipadic-neologd
+jawiki-titles  CC-BY-SA 3.0 https://ja.wikipedia.org/wiki/Wikipedia:%E3%82%A6%E3%82%A3%E3%82%AD%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2%E3%82%92%E4%BA%8C%E6%AC%A1%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B
+mozc    BSD-3-Clause    https://github.com/google/mozc
+---
+恐らく､最新のdepot_toolsではビルドできない｡また､Python2とMSVC2015､Ninjaが必要である｡
+各commitは其々の作者が諸権利を有する｡また､本Repository自体が有する著作権は元のライセンスと互換性がある範囲で放棄する｡
+
 [Mozc - a Japanese Input Method Editor designed for multi-platform](https://github.com/google/mozc)
 ===================================
 
