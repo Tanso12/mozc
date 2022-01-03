@@ -14,6 +14,11 @@ mozc    BSD-3-Clause    https://github.com/google/mozc
 ---
 恐らく､最新のdepot_toolsではビルドできない｡また､Python2とMSVC2015､Ninjaが必要である｡
 各commitは其々の作者が諸権利を有する｡また､本Repository自体が有する著作権は元のライセンスと互換性がある範囲で放棄する｡
+mozc-2.23.2815一覧(オリジナルのママForkされているものは無視)
+https://github.com/Keruspe/mozc
+https://github.com/Polynomdivision/mozc
+https://github.com/Ladicle/mozc
+https://github.com/ywata/mozc
 
 [Mozc - a Japanese Input Method Editor designed for multi-platform](https://github.com/google/mozc)
 ===================================
