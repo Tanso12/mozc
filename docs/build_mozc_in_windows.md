@@ -36,7 +36,7 @@ You can download Mozc source code as follows:
 ```
 mkdir c:\work
 cd c:\work
-git clone https://github.com/google/mozc.git -b master --single-branch --recursive
+git clone https://github.com/Tanso12/mozc.git -b master --single-branch --recursive
 ```
 
 # Compilation
