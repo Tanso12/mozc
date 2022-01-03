@@ -11,7 +11,7 @@ Currently, only Ubuntu 14.04 is tested to host the Docker container to build Moz
 
 ```
 mkdir ubuntu14.04 && cd ubuntu14.04
-curl -O https://raw.githubusercontent.com/jiro-aqua/mozc/master/docker/ubuntu14.04/Dockerfile
+curl -O https://raw.githubusercontent.com/Tanso12/mozc/master/docker/ubuntu14.04/Dockerfile
 sudo docker build --rm -t $USER/mozc_ubuntu14.04 .
 sudo docker run --interactive --tty --rm $USER/mozc_ubuntu14.04
 ```
@@ -39,14 +39,14 @@ Before explaining detailed build configurations and options, let's walk through 
 python build_mozc.py gyp --target_platform=Android
 python build_mozc.py build -c Debug android/android.gyp:apk
 ```
-
+---無効化されている---
 ### Build Mozc for NaCl:
 
 ```
 python build_mozc.py gyp --target_platform=NaCl --nacl_sdk_root=$NACL_SDK_ROOT
 python build_mozc.py build -c Release chrome/nacl/nacl_extension.gyp:nacl_mozc
 ```
-
+---
 ### Build Mozc for Linux Desktop:
 
 ```
