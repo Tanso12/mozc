@@ -12,7 +12,7 @@ neologd Apache-2.0  https://github.com/neologd/mecab-ipadic-neologd
 jawiki-titles  CC-BY-SA 3.0 https://ja.wikipedia.org/wiki/Wikipedia:%E3%82%A6%E3%82%A3%E3%82%AD%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2%E3%82%92%E4%BA%8C%E6%AC%A1%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B
 mozc    BSD-3-Clause    https://github.com/google/mozc
 ---
-恐らく､最新のdepot_toolsではビルドできない｡また､Python2とMSVC2015､Ninjaが必要である｡
+恐らく､最新のdepot_toolsではビルドできない｡また､Python2とMSVC2015､Qt､Ninjaが必要である｡
 各commitは其々の作者が諸権利を有する｡また､本Repository自体が有する著作権は元のライセンスと互換性がある範囲で放棄する｡
 mozc-2.23.2815一覧(オリジナルのママForkされているものは無視)
 https://github.com/Keruspe/mozc
@@ -20,6 +20,7 @@ https://github.com/Polynomdivision/mozc
 https://github.com/Ladicle/mozc
 https://github.com/ywata/mozc
 
+令和対応済み､Python2とMSVC2015､Qt5.9.9､Ninja10.10.2にてビルド確認｡但し､プロパティ等がエラーで開けない｡
 [Mozc - a Japanese Input Method Editor designed for multi-platform](https://github.com/google/mozc)
 ===================================
 
