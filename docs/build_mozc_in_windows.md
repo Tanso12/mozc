@@ -15,18 +15,27 @@ Building Mozc on Windows requires the following software.
     * You must download msvs2015 32-bit version of Qt 5 since currently `mozc_tool.exe` needs to be built as a 32-bit executable.
 
 MSVC2015は､chocolateyを導入していれば､以下のコマンドでインストールできる｡
+```
 choco install visualstudio2015community --version=14.0.23107.0
-gitは(https://github.com/git-for-windows/git/releases)若しくは､
+```
+gitは( https://github.com/git-for-windows/git/releases )若しくは､
+```
 choco install git
-python2は(https://www.python.org/ftp/python/2.7.18/python-2.7.18.amd64.msi)若しくは､
+```
+python2は( https://www.python.org/ftp/python/2.7.18/python-2.7.18.amd64.msi )若しくは､
+```
 choco install python2
+```
 また､python2インストール後､以下のコマンドを実行する｡
+```
 pip install ninja
+```
 他にも(protobuf six schema coverage colorama repo gclient)が必要かもしれない｡
 必須ではないがQt5を用いる?
-Qt5.6.3(https://download.qt.io/new_archive/qt/5.6/5.6.3/qt-opensource-windows-x86-msvc2015-5.6.3.exe)はアカウント不要
-Qt5.9.9(https://www.qt.io/download-thank-you?hsLang=en)要アカウント､オンラインインストーラー
+Qt5.6.3( https://download.qt.io/new_archive/qt/5.6/5.6.3/qt-opensource-windows-x86-msvc2015-5.6.3.exe )はアカウント不要
+Qt5.9.9( https://www.qt.io/download-thank-you?hsLang=en )要アカウント､オンラインインストーラー
 これより新しいものでは､msvs2015 32-bitに対応せず｡
+
 # Get dependent prebuilt binaries
 If you do not have `git`, `python 2.7`, and `ninja` in your build environment, you can use prebuilt binaries in [depot\_tools](https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html).  You need to manually unzip `depot_tools.zip` and add the extracted directory into your `PATH`.
 
