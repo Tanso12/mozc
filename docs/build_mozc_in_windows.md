@@ -13,6 +13,17 @@ Building Mozc on Windows requires the following software.
   * (optinal) [Qt 5](https://download.qt.io/official_releases/qt/)
     * Commercial version and LGPL version are available.
     * You must download msvs2015 32-bit version of Qt 5 since currently `mozc_tool.exe` needs to be built as a 32-bit executable.
+MSVC2015は､chocolateyを導入していれば､以下のコマンドでインストールできる｡
+choco install visualstudio2015community --version=14.0.23107.0
+python2は(https://www.python.org/ftp/python/2.7.18/python-2.7.18.amd64.msi)若しくは､
+choco install python2
+また､python2インストール後､以下のコマンドを実行する｡
+pip install ninja
+他にも(protobuf six schema coverage colorama repo gclient)が必要かもしれない｡
+必須ではないがQt5を用いる?
+Qt5.6.3(https://download.qt.io/new_archive/qt/5.6/5.6.3/qt-opensource-windows-x86-msvc2015-5.6.3.exe)はアカウント不要
+Qt5.9.9(https://www.qt.io/download-thank-you?hsLang=en)要アカウント､オンラインインストーラー
+これより新しいものでは､msvs2015 32-bitに対応せず｡
 
 # Get dependent prebuilt binaries
 
@@ -45,10 +56,10 @@ First, you'll need to generate Visual C++ project files using a tool called [GYP
 
 ```
 cd c:\work\mozc\src
-python build_mozc.py gyp --qtdir=c:\Qt\Qt5.6.2\5.6\msvc2015
+python build_mozc.py gyp --qtdir=C:\Qt\5.9.9\msvc2015
 ```
 
-The directory of Qt (`c:\Qt\Qt5.6.2\5.6\msvc2015` in this example) differs based on Qt version. If you specify `--noqt` option instead of `--qtdir=<dir to Qt>`, mozc\_tool will be built as a mock version, which does nothing.
+The directory of Qt (`C:\Qt\5.9.9\msvc2015` in this example) differs based on Qt version. If you specify `--noqt` option instead of `--qtdir=<dir to Qt>`, mozc\_tool will be built as a mock version, which does nothing.
 
 You can also specify `--branding=GoogleJapaneseInput` option and `--wix_dir=<dir to WiX binaries>` option here to reproduce official Google Japanese Input binaries and installers.
 
