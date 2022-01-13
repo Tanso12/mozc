@@ -74,7 +74,7 @@ RUN git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 ENV PATH $PATH:/home/mozc_builder/work/depot_tools
 
 # check out Mozc source with submodules
-RUN git clone https://github.com/jiro-aqua/mozc.git -b master --single-branch --recursive
+RUN git clone https://github.com/tanso12/mozc.git -b 2.23.2815.102-mod --single-branch --recursive
 
 WORKDIR /home/mozc_builder/work/mozc/src
 ENTRYPOINT bash
