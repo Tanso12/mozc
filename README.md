@@ -19,6 +19,9 @@ https://github.com/Keruspe/mozc
 https://github.com/Polynomdivision/mozc
 https://github.com/Ladicle/mozc
 https://github.com/ywata/mozc
+https://salsa.debian.org/debian/mozc/-/tree/master/debian
+https://launchpad.net/ubuntu/focal/+source/mozc
+https://src.fedoraproject.org/rpms/mozc/tree/c0966a1be421cecdd92da03fe1b97533a8a0fe77
 
 令和対応済み､Python2とMSVC2015､Qt5.9.9､Ninja10.10.2にてビルド確認｡但し､プロパティ等がエラーで開けない｡
 →qwindows.dllをMozc/platformsに入れることで解決｡
