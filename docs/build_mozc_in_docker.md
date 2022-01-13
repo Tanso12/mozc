@@ -33,12 +33,19 @@ Don't forget to rebuild Docker container when Dockerfile is updated.
 # Build in the container
 Before explaining detailed build configurations and options, let's walk through the simplest cases to see how it looks like.
 
-### Build Mozc for Android:
+###Android向けビルド:
 
 ```
 python build_mozc.py gyp --target_platform=Android
 python build_mozc.py build -c Debug android/android.gyp:apk
 ```
+初期状態のアーキテクチャーはarm64であり､アプリIDは'tanso12.mozc.androidime.jp.arm64としてある｡
+`python build_mozc.py gyp --target_platform=Android --android_arch=arm`で通常通り32bitARMのバイナリを生成出来る｡
+`python build_mozc.py gyp --target_platform=Android --android_arch=x86`でx86向け､
+`python build_mozc.py gyp --target_platform=Android --android_arch=x86_64`でx86の64bit向けのバイナリが得られると考えられる｡
+アプリIDは`--android_application_id`で指定できる模様｡
+`--android_home`でAndroid SDKの場所を指定出来､`--android_ndk_home`でAndroid NDKの場所の指定が出来ると見られる｡
+
 ---無効化されている---
 ### Build Mozc for NaCl:
 
@@ -47,7 +54,7 @@ python build_mozc.py gyp --target_platform=NaCl --nacl_sdk_root=$NACL_SDK_ROOT
 python build_mozc.py build -c Release chrome/nacl/nacl_extension.gyp:nacl_mozc
 ```
 ---
-### Build Mozc for Linux Desktop:
+###Linuxデスクトップ向けビルド:
 
 ```
 python build_mozc.py gyp --target_platform=Linux
