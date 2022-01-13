@@ -293,11 +293,11 @@ def ParseGypOptions(args):
   parser.add_option('--android_arch', dest='android_arch',
                     type='choice',
                     choices=('arm', 'x86', 'mips', 'arm64', 'x86_64', 'mips64'),
-                    default='arm',
+                    default='arm64',
                     help='[Android build only] Android architecture '
                     '(arm, x86, mips)')
   parser.add_option('--android_application_id', dest='android_application_id',
-                    default='org.mozc.android.inputmethod.japanese',
+                    default='tanso12.mozc.androidime.jp.arm64',
                     help='[Android build only] Android\'s application id'
                     ' (==package ID). '
                     'If set, On Android2.1 preference screen works '
