@@ -21,6 +21,8 @@ https://github.com/Ladicle/mozc
 https://github.com/ywata/mozc
 
 令和対応済み､Python2とMSVC2015､Qt5.9.9､Ninja10.10.2にてビルド確認｡但し､プロパティ等がエラーで開けない｡
+→qwindows.dllをMozc/platformsに入れることで解決｡
+更に､Python2とMSVC2015､Qt5.6.3､Ninja10.10.2でも確認｡
 [Mozc - a Japanese Input Method Editor designed for multi-platform](https://github.com/google/mozc)
 ===================================
 
