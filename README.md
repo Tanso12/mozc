@@ -60,6 +60,9 @@ Build Instructions
 ------------------
 
 * [How to build Mozc in Docker](docs/build_mozc_in_docker.md): Android, NaCl, and Linux desktop builds.
+* [How to build Mozc for Android in Ubuntu 20.04](docs/build_mozc_for_android_in_ubuntu_20.04.md)
+* [How to build Mozc in Ubuntu 20.04](docs/build_mozc_in_ubuntu_20.04.md)
+* [How to build Mozc in Debian_10_Buster](docs/build_mozc_in_debian_10.md)
 * [How to build Mozc in OS X](docs/build_mozc_in_osx.md): OS X build.
 * [How to build Mozc in Windows](docs/build_mozc_in_windows.md): Windows build.
 
