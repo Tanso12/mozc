@@ -1,32 +1,32 @@
-github上のmozc-2.23.2815を集約､ut辞書とupstreamの辞書を取り込む｡(まだ)
-各辞書のライセンスは以下｡なお､Windows上での使用を想定している｡
-mozcdic ut https://osdn.net/users/utuhiro/pf/utuhiro/files/
-alt-cannadic    GPL-2.0 https://ja.osdn.net/projects/alt-cannadic/wiki/FrontPage
-edict2  CC-BY-SA 3.0    http://www.edrdg.org/jmdict/edict.html
-skkdic  GPL-2.0-or-later    http://openlab.ring.gr.jp/skk/wiki/wiki.cgi?page=SKK%BC%AD%BD%F1
-sudachidict Apache-2.0  https://github.com/WorksApplications/SudachiDict
-chimei  public domain  http://www.post.japanpost.jp/zipcode/dl/readme.html
-jawiki-articles CC-BY-SA 3.0    https://ja.wikipedia.org/wiki/Wikipedia:%E3%82%A6%E3%82%A3%E3%82%AD%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2%E3%82%92%E4%BA%8C%E6%AC%A1%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B
-jinmei-ut   Apache-2.0  http://linuxplayers.g1.xrea.com/mozc-ut.html
-neologd Apache-2.0  https://github.com/neologd/mecab-ipadic-neologd
-jawiki-titles  CC-BY-SA 3.0 https://ja.wikipedia.org/wiki/Wikipedia:%E3%82%A6%E3%82%A3%E3%82%AD%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2%E3%82%92%E4%BA%8C%E6%AC%A1%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B
-mozc    BSD-3-Clause    https://github.com/google/mozc
+github上のmozc-2.23.2815を集約､ut辞書とupstreamの辞書を取り込む｡(まだ)<br>
+各辞書のライセンスは以下｡なお､Windows上での使用を想定している｡<br>
+mozcdic ut https://osdn.net/users/utuhiro/pf/utuhiro/files/<br>
+alt-cannadic    GPL-2.0 https://ja.osdn.net/projects/alt-cannadic/wiki/FrontPage<br>
+edict2  CC-BY-SA 3.0    http://www.edrdg.org/jmdict/edict.html<br>
+skkdic  GPL-2.0-or-later    http://openlab.ring.gr.jp/skk/wiki/wiki.cgi?page=SKK%BC%AD%BD%F1<br>
+sudachidict Apache-2.0  https://github.com/WorksApplications/SudachiDict<br>
+chimei  public domain  http://www.post.japanpost.jp/zipcode/dl/readme.html<br>
+jawiki-articles CC-BY-SA 3.0    https://ja.wikipedia.org/wiki/Wikipedia:%E3%82%A6%E3%82%A3%E3%82%AD%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2%E3%82%92%E4%BA%8C%E6%AC%A1%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B<br>
+jinmei-ut   Apache-2.0  http://linuxplayers.g1.xrea.com/mozc-ut.html<br>
+neologd Apache-2.0  https://github.com/neologd/mecab-ipadic-neologd<br>
+jawiki-titles  CC-BY-SA 3.0 https://ja.wikipedia.org/wiki/Wikipedia:%E3%82%A6%E3%82%A3%E3%82%AD%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2%E3%82%92%E4%BA%8C%E6%AC%A1%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B<br>
+mozc    BSD-3-Clause    https://github.com/google/mozc<br>
 ---
-恐らく､最新のdepot_toolsではビルドできない｡また､Python2とMSVC2015､Qt､Ninjaが必要である｡
-各commitは其々の作者が諸権利を有する｡また､本Repository自体が有する著作権は元のライセンスと互換性がある範囲で放棄する｡
-mozc-2.23.2815一覧(オリジナルのママForkされているものは無視)
-https://github.com/Keruspe/mozc
-https://github.com/Polynomdivision/mozc
-https://github.com/Ladicle/mozc
-https://github.com/ywata/mozc
-https://salsa.debian.org/debian/mozc/-/tree/master/debian
-https://launchpad.net/ubuntu/focal/+source/mozc
-https://src.fedoraproject.org/rpms/mozc/tree/c0966a1be421cecdd92da03fe1b97533a8a0fe77
+恐らく､最新のdepot_toolsではビルドできない｡また､Python2とMSVC2015､Qt､Ninjaが必要である｡<br>
+各commitは其々の作者が諸権利を有する｡また､本Repository自体が有する著作権は元のライセンスと互換性がある範囲で放棄する｡<br>
+mozc-2.23.2815一覧(オリジナルのママForkされているものは無視)<br>
+https://github.com/Keruspe/mozc<br>
+https://github.com/Polynomdivision/mozc<br>
+https://github.com/Ladicle/mozc<br>
+https://github.com/ywata/mozc<br>
+https://salsa.debian.org/debian/mozc/-/tree/master/debian<br>
+https://launchpad.net/ubuntu/focal/+source/mozc<br>
+https://src.fedoraproject.org/rpms/mozc/tree/c0966a1be421cecdd92da03fe1b97533a8a0fe77<br>
 
-令和対応済み､Python2とMSVC2015､Qt5.9.9､Ninja10.10.2にてビルド確認｡但し､プロパティ等がエラーで開けない｡
-→qwindows.dllをMozc/platformsに入れることで解決｡
-更に､Python2とMSVC2015､Qt5.6.3､Ninja10.10.2でも確認｡
-[Mozc - a Japanese Input Method Editor designed for multi-platform](https://github.com/google/mozc)
+令和対応済み､Python2とMSVC2015､Qt5.9.9､Ninja10.10.2にてビルド確認｡但し､プロパティ等がエラーで開けない｡<br>
+→qwindows.dllをMozc/platformsに入れることで解決｡<br>
+更に､Python2とMSVC2015､Qt5.6.3､Ninja10.10.2でも確認｡<br>
+[Mozc - a Japanese Input Method Editor designed for multi-platform](https://github.com/google/mozc)<br>
 ===================================
 
 Copyright 2010-2018, Google Inc.
